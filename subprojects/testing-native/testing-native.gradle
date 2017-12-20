@@ -14,6 +14,7 @@
  * limitations under the License.
  */
 plugins {
+    id 'strict-compile'
     id 'classycle'
 }
 
@@ -33,5 +34,3 @@ testFixtures {
     from(':platformBase')
     from(':testingBase')
 }
-
-strictCompile()

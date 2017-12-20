@@ -28,13 +28,3 @@ val Project.libraries
 
 fun Project.library(name: String): Any =
     libraries[name]!!
-
-
-@Suppress("unchecked_cast")
-fun Project.strictCompile() =
-    (extra["strictCompile"] as groovy.lang.Closure<Unit>)()
-
-
-@Suppress("unchecked_cast")
-fun Project.strictCompileIgnoreDeprecations() =
-    (extra["strictCompileIgnoreDeprecations"] as groovy.lang.Closure<Unit>)()
