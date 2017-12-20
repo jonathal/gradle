@@ -31,11 +31,6 @@ fun Project.library(name: String): Any =
 
 
 @Suppress("unchecked_cast")
-fun Project.useTestFixtures(project: String? = null, sourceSet: String? = null) =
-    (extra["useTestFixtures"] as groovy.lang.Closure<Unit>)(mapOf("project" to project, "sourceSet" to sourceSet))
-
-
-@Suppress("unchecked_cast")
 fun Project.strictCompile() =
     (extra["strictCompile"] as groovy.lang.Closure<Unit>)()
 
